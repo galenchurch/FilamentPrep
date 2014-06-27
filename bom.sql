@@ -47,7 +47,7 @@ CREATE TABLE `bom` (
   PRIMARY KEY (`item`),
   KEY `item` (`item`),
   KEY `part` (`part`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -57,7 +57,9 @@ CREATE TABLE `bom` (
 LOCK TABLES `bom` WRITE;
 /*!40000 ALTER TABLE `bom` DISABLE KEYS */;
 INSERT INTO `bom` VALUES (1,NULL,NULL,NULL,'Controller, Arduino Uno, Dev Board',1,'each',NULL,'Arduino','Uno R3',NULL,NULL,'http://www.adafruit.com/products/50',NULL,NULL,NULL,NULL,NULL,NULL,1,'c4888db1497ae7255f0c345135894cc77853c2f6');
-INSERT INTO `bom` VALUES (2,NULL,NULL,NULL,'Fan, Muffin, 40mm x 40mm x 20mm, 12VDC',1,'each',NULL,'ebm-papst','412','Newark','86K9830','http://www.newark.com/ebm-papst/412/axial-fan-40mm-12vdc/dp/86K9830?CMP=AFC-OP',NULL,NULL,NULL,NULL,NULL,NULL,1,'bdd8285e0c07f64be45eccaa2aa4603cc3223511');
+INSERT INTO `bom` VALUES (2,NULL,NULL,NULL,'Fan, Muffin, 40mm x 40mm x 20mm, 12VDC',1,'each',NULL,'ebm-papst','412','Newark','86K9830','http://www.ebmpapst.us/en/products/compact_fans/axial_compact_fans/axial_compact_fans_detail.php?pID=53745',NULL,'If more CFM req. checkout ebm-papst website',NULL,NULL,NULL,NULL,1,'90072812fdf9e4ae994c023cac80c5d18e0b25f9');
+INSERT INTO `bom` VALUES (3,NULL,NULL,NULL,'LCD, Memory, Low-power, 1.3\"',1,'each',NULL,NULL,NULL,'Adafruit','1393','http://www.adafruit.com/products/1393',NULL,NULL,NULL,NULL,NULL,NULL,1,'1dfb3842483f15cb49b7e968ffdd90f5e20e2df7');
+INSERT INTO `bom` VALUES (4,NULL,NULL,NULL,'Heater, Cartridge, 24VDC, 20W',1,'each',NULL,'Watlow','C1A-9600',NULL,NULL,'http://www.watlow.com/products/heaters/metric-cartridge-heaters.cfm',NULL,NULL,NULL,NULL,NULL,NULL,1,'517bf3a249be0131393fab603ae448af4f80bfb3');
 /*!40000 ALTER TABLE `bom` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -70,4 +72,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-06-27 19:26:17
+-- Dump completed on 2014-06-27 19:50:54
