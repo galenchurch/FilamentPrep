@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.1.73, for redhat-linux-gnu (x86_64)
 --
--- Host: localhost    Database: bndr_s001
+-- Host: localhost    Database: bndr_s002
 -- ------------------------------------------------------
 -- Server version	5.1.73
 
@@ -47,7 +47,7 @@ CREATE TABLE `bom` (
   PRIMARY KEY (`item`),
   KEY `item` (`item`),
   KEY `part` (`part`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -56,7 +56,8 @@ CREATE TABLE `bom` (
 
 LOCK TABLES `bom` WRITE;
 /*!40000 ALTER TABLE `bom` DISABLE KEYS */;
-INSERT INTO `bom` VALUES (1,NULL,NULL,NULL,'Controller, Arduino Uno, Dev Board',1,'each',NULL,'Arduino','Uno R3',NULL,NULL,'http://www.adafruit.com/products/50',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL);
+INSERT INTO `bom` VALUES (1,NULL,NULL,NULL,'Controller, Arduino Uno, Dev Board',1,'each',NULL,'Arduino','Uno R3',NULL,NULL,'http://www.adafruit.com/products/50',NULL,NULL,NULL,NULL,NULL,NULL,1,'c4888db1497ae7255f0c345135894cc77853c2f6');
+INSERT INTO `bom` VALUES (2,NULL,NULL,NULL,'Fan, Muffin, 40mm x 40mm x 20mm, 12VDC',1,'each',NULL,'ebm-papst','412','Newark','86K9830','http://www.newark.com/ebm-papst/412/axial-fan-40mm-12vdc/dp/86K9830?CMP=AFC-OP',NULL,NULL,NULL,NULL,NULL,NULL,1,'bdd8285e0c07f64be45eccaa2aa4603cc3223511');
 /*!40000 ALTER TABLE `bom` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -69,4 +70,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-06-16 17:55:11
+-- Dump completed on 2014-06-27 19:26:17
